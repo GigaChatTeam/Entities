@@ -60,6 +60,10 @@ kotlin {
         commonMain {
             dependencies {
                 // Kotlin extensions
+                // Serialization
+                api(libs.kotlinx.serialization.json)
+                api(libs.kotlinx.serialization.cbor)
+                api(libs.kotlinx.serialization.protobuf)
                 // DateTime
                 api(libs.kotlinx.datetime)
             }
