@@ -68,7 +68,7 @@ kotlin {
 }
 
 android {
-    namespace = "gc"
+    namespace = "gigachat"
     compileSdk = libs.versions.android.compileSDK.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minimumSDK.get().toInt()
