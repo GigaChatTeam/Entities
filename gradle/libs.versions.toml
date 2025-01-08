@@ -1,0 +1,21 @@
+[versions]
+# Kotlin & extensions
+kotlin = "2.1.0"
+kotlinx-datetime = "0.6.1"
+# Android support
+agp = "8.7.3"
+# Build properties
+android-compileSDK = "35"
+android-minimumSDK = "24"
+
+[libraries]
+# Common Kotlin extensions
+## Datetime
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinx-datetime" }
+
+[plugins]
+# Platform plugins
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+# Serialization
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

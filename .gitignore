@@ -1,0 +1,15 @@
+!.gitignore
+.*/
+gradle.properties
+local.properties
+build/
+gradle/wrapper/
+kotlin-js-store/
+
+.idea/*
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
